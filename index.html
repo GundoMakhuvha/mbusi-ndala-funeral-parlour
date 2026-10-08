@@ -1,15 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mbusi Ndala</title>
-    </head>
+    <!--
+      SEO NOTE: the live domain below is https://mbusindala.co.za
+      If the site goes live on a different address, find-and-replace
+      "https://mbusindala.co.za" here, in public/sitemap.xml,
+      public/robots.txt and src/siteConfig.ts.
+    -->
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <title>Mbusi Ndala Funeral Parlour | Funeral Services in Kwa-Thema, Springs</title>
+    <meta
+      name="description"
+      content="Compassionate, dignified funeral services in Kwa-Thema, Springs. Funeral cover from R260 p/m, free grief counselling and 24/7 support for your family."
+    />
+    <meta name="keywords" content="funeral parlour Kwa-Thema, funeral services Springs, funeral cover, funeral packages Ekurhuleni, grief counselling, Mbusi Ndala" />
+    <meta name="author" content="Mbusi Ndala Funeral Parlour" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="geo.region" content="ZA-GT" />
+    <meta name="geo.placename" content="Kwa-Thema, Springs" />
+    <meta name="geo.position" content="-26.3159;28.4081" />
+    <meta name="ICBM" content="-26.3159, 28.4081" />
+    <link rel="canonical" href="https://mbusindala.co.za/" />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://www.youtube.com" />
+
+    <!-- Open Graph: WhatsApp, Facebook, LinkedIn previews -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mbusi Ndala Funeral Parlour" />
+    <meta property="og:title" content="Mbusi Ndala Funeral Parlour | Funeral Services in Kwa-Thema, Springs" />
+    <meta
+      property="og:description"
+      content="Compassionate, dignified funeral services in Kwa-Thema, Springs. Funeral cover from R260 p/m, free grief counselling and 24/7 support for your family."
+    />
+    <meta property="og:url" content="https://mbusindala.co.za/" />
+    <meta property="og:image" content="https://mbusindala.co.za/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mbusi Ndala Funeral Parlour – Honouring your loved ones whilst holding your heart." />
+    <meta property="og:locale" content="en_ZA" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mbusi Ndala Funeral Parlour | Funeral Services in Kwa-Thema, Springs" />
+    <meta
+      name="twitter:description"
+      content="Compassionate, dignified funeral services in Kwa-Thema, Springs. Funeral cover from R260 p/m, free grief counselling and 24/7 support for your family."
+    />
+    <meta name="twitter:image" content="https://mbusindala.co.za/og-image.jpg" />
+
+    <!-- Structured data: tells Google this is a local funeral business (address, phone, hours, map) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://mbusindala.co.za/#business",
+            "name": "Mbusi Ndala Funeral Parlour",
+            "alternateName": "Mbusi Ndala",
+            "description": "Compassionate, dignified funeral services, funeral cover and grief counselling in Kwa-Thema, Springs.",
+            "slogan": "Honouring your loved ones whilst holding your heart.",
+            "url": "https://mbusindala.co.za/",
+            "logo": "https://mbusindala.co.za/icon-512.png",
+            "image": "https://mbusindala.co.za/og-image.jpg",
+            "telephone": "+27111234567",
+            "email": "info@mbusindala.co.za",
+            "priceRange": "R260–R497 per month",
+            "currenciesAccepted": "ZAR",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "14149 Tsotetsi St, Kwa-Thema Phase 2",
+              "addressLocality": "Springs",
+              "addressRegion": "Gauteng",
+              "postalCode": "1575",
+              "addressCountry": "ZA"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": -26.3159, "longitude": 28.4081 },
+            "hasMap": "https://maps.google.com/?q=14149+Tsotetsi+St,+Kwa-Thema+Phase+2,+Springs,+1575",
+            "areaServed": ["Kwa-Thema", "Springs", "Ekurhuleni", "Gauteng"],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            },
+            "employee": { "@type": "Person", "name": "Ephie Lebohang Ndala", "jobTitle": "Director" },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Funeral Packages",
+              "itemListElement": [
+                { "@type": "Offer", "name": "Family Package", "price": "260", "priceCurrency": "ZAR", "description": "Member + 5 dependents, from R260 per month" },
+                { "@type": "Offer", "name": "Forever in Our Hearts Package", "price": "288", "priceCurrency": "ZAR", "description": "Member + 9 dependents, from R288 per month" },
+                { "@type": "Offer", "name": "Senior Citizens Package", "price": "319", "priceCurrency": "ZAR", "description": "Senior citizen + spouse, from R319 per month" }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mbusindala.co.za/#website",
+            "url": "https://mbusindala.co.za/",
+            "name": "Mbusi Ndala Funeral Parlour",
+            "inLanguage": "en-ZA",
+            "publisher": { "@id": "https://mbusindala.co.za/#business" }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <h1>Mbusi Ndala Funeral Parlour</h1>
+      <p>
+        Compassionate, dignified funeral services in Kwa-Thema, Springs. Funeral cover from R260 per month, free grief
+        counselling and 24/7 support. 14149 Tsotetsi St, Kwa-Thema Phase 2, Springs, 1575. Email info@mbusindala.co.za.
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

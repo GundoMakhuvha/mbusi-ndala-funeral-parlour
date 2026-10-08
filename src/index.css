@@ -3,6 +3,63 @@
 @import 'tw-animate-css';
 @import './styles/globals.css';
 
+/* Fonts (loaded in index.html): elegant serif headings + clean modern body text */
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
+}
+
 @layer base {
-  html, body, #root { min-height: 100vh; height: 100%; margin: 0; }
+  html, body, #root { min-height: 100vh; margin: 0; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body { font-family: var(--font-sans); }
+  ::selection { background: #000; color: #fff; }
+  .dark ::selection { background: #fff; color: #000; }
+}
+
+/* ---------- Motion ---------- */
+@keyframes logo-in {
+  0%   { opacity: 0; transform: scale(0.88); filter: blur(8px); }
+  60%  { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: scale(1); filter: blur(0); }
+}
+@keyframes logo-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes glow {
+  0%, 100% { opacity: 0.35; transform: scale(0.95); }
+  50%      { opacity: 0.7;  transform: scale(1.05); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes page-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slow-zoom {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1); }
+}
+
+.animate-logo-in   { animation: logo-in 1.2s cubic-bezier(.2,.7,.2,1) both, logo-float 6s ease-in-out 1.2s infinite; }
+.animate-glow      { animation: glow 5s ease-in-out infinite; }
+.animate-fade-up   { animation: fade-up 0.9s cubic-bezier(.2,.7,.2,1) both; }
+.animate-page-in   { animation: page-in 0.5s ease-out both; }
+.animate-slow-zoom { animation: slow-zoom 8s ease-out both; }
+
+/* Scroll reveal (see components/Reveal.tsx) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(.2,.7,.2,1), transform 0.8s cubic-bezier(.2,.7,.2,1);
+}
+.reveal-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .animate-logo-in, .animate-glow, .animate-fade-up, .animate-page-in, .animate-slow-zoom { animation: none; }
+  html { scroll-behavior: auto; }
 }
