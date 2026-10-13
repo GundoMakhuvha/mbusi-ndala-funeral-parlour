@@ -62,6 +62,51 @@ const allGalleryImages = [
     title: "Attention to Detail",
     description: "Every element of the service is carefully considered and beautifully presented.",
   },
+  {
+    src: "https://i.postimg.cc/ZqyybDfW/funeralwithbanners.jpg",
+    title: "A Fitting Farewell",
+    description: "Branded tents and banners prepared for a dignified graveside service.",
+  },
+  {
+    src: "https://i.postimg.cc/zfRRzPdV/coffinintotrailer.jpg",
+    title: "Carried with Care",
+    description: "Every loved one is handled gently and with respect on their final journey.",
+  },
+  {
+    src: "https://i.postimg.cc/TPWWdHkm/nexttocoffintrailer.jpg",
+    title: "The Final Journey",
+    description: "Accompanying loved ones with reverence from the service to their resting place.",
+  },
+  {
+    src: "https://i.postimg.cc/pdnnW10d/MNChairs.jpg",
+    title: "Prepared for Mourners",
+    description: "Neatly arranged seating so that families and guests are comfortable.",
+  },
+  {
+    src: "https://i.postimg.cc/Cx2qVVsQ/Nkazi-Mom-Sitting-In-Reception.jpg",
+    title: "Our Reception",
+    description: "A calm, welcoming space where every family is received with care.",
+  },
+  {
+    src: "https://i.postimg.cc/gJgpfGv8/Nkazi-Mom-Black-Dress.png",
+    title: "Dressed in Dignity",
+    description: "Presented with elegance and respect at every service.",
+  },
+  {
+    src: "https://i.postimg.cc/bw5tjj9L/Nkazi-In-Dress.jpg",
+    title: "Grace and Presence",
+    description: "Leading each farewell with warmth, poise and compassion.",
+  },
+  {
+    src: "https://i.postimg.cc/fRP9hhf8/Staff2.jpg",
+    title: "Our People",
+    description: "A dedicated team that serves every family as if it were their own.",
+  },
+  {
+    src: "https://i.postimg.cc/t4cxHHN2/With-Staff.jpg",
+    title: "Together in Service",
+    description: "Leadership and staff working side by side for the families we serve.",
+  },
 ];
 /* ===================================================================== */
 
@@ -113,10 +158,12 @@ export function GalleryPage() {
         eyebrow="Our Work"
         title="Gallery"
         subtitle="Dignified facilities & compassionate service"
+        image="https://i.postimg.cc/ZqyybDfW/funeralwithbanners.jpg"
+        imageAlt="A Mbusi Ndala graveside service with branded tents and banners"
       />
 
       {/* Gallery Grid */}
-      <section className="pt-4 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
+      <section className="pt-16 md:pt-20 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
             {galleryImages.map((image, index) => (

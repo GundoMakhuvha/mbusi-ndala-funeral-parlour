@@ -72,10 +72,12 @@ export function ServicesPage({ onSelectPackage }: ServicesPageProps) {
         eyebrow="Funeral Cover"
         title="Our Funeral Packages"
         subtitle="Comprehensive packages designed to give you peace of mind and financial security for you and your loved ones."
+        image="https://i.postimg.cc/pdnnW10d/MNChairs.jpg"
+        imageAlt="Branded Mbusi Ndala chairs set out for a funeral service"
       />
 
       {/* Packages Grid */}
-      <section className="pt-4 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
+      <section className="pt-16 md:pt-20 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
         <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {packages.map((pkg, index) => (

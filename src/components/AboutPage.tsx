@@ -152,10 +152,13 @@ export function AboutPage() {
         eyebrow="Mbusi Ndala Funeral Parlour"
         title="About Us"
         subtitle="Compassion, dignity, excellence and integrity – a calling, not just a profession."
+        image="https://i.postimg.cc/t4cxHHN2/With-Staff.jpg"
+        imageAlt="The Mbusi Ndala Funeral Parlour team"
+        imagePosition="center 30%"
       />
 
       {/* Our Story */}
-      <section className="pt-8 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
+      <section className="pt-20 md:pt-24 pb-24 px-4 bg-white dark:bg-black transition-colors duration-300">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <Reveal>
